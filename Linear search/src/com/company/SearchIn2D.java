@@ -11,13 +11,13 @@ public class SearchIn2D {
                 {78,89,91,100}
         };
         int target = 100;
-        int[] ans = search(arr, target);
+        int[] ans = search(arr, target); // format of the output in 2D arrays
         System.out.println(Arrays.toString(ans));
 
     }
     static int[] search(int[][] arr, int target) {
         for (int row = 0; row < arr.length; row++) {
-            for (int col = 0; col < arr[row].length; col++) {
+            for (int col = 0; col < arr[row].length; col++) { //Using row as another array in 2D array
                 if (arr[row][col] == target) {
                     return new int[]{row, col};
                 }
