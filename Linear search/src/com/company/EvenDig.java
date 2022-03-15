@@ -18,6 +18,7 @@ public class EvenDig {
         }
         return count;
     }
+    // function to check the number of digits are even or not
     static  boolean even(int num){
         int numberOfDigits = digits(num);
         if(numberOfDigits % 2 == 0){
@@ -25,6 +26,7 @@ public class EvenDig {
         }
         return false;
     }
+    // count the number of digits in a number.
     static int digits(int num){
         int count = 0;
         while (num > 0){
