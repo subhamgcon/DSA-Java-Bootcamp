@@ -7,6 +7,7 @@ public class MaxWealth {
 
     public int maximumWealth(int [][] accounts){
         int ans = Integer.MIN_VALUE;
+        // using 2D array looping persons as rows and accounts as cols
         for (int[] ints : accounts) {
             // when you start a new column, take a new sum for a row.
             int sum = 0;
@@ -14,7 +15,7 @@ public class MaxWealth {
                 sum += anInt;
 
             }
-// now we have sum of accounts of person
+            // now we have sum of accounts of person
             // check with overall sum
             if (sum > ans) {
                 ans = sum;
